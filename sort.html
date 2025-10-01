@@ -1,0 +1,23 @@
+<html>
+    <head>
+      <title>Sort</title>
+    </head>
+    <body>
+     <h1>this is sorting in JS</h1>
+     <button onclick="ascending()">Asending Order</button>
+     <button onclick="desending()">Desending Order</button>
+     <p id="results"></p>
+     <script>
+        var points=[40,100,1,5,25,10];
+        document.getElementById("results").innerHTML=points;
+        function ascending(){
+            points.sort(function(a,b){return a-b});
+            document.getElementById("results").innerHTML=points;
+        }
+        function desending(){
+            points.sort(function(a,b){return b-a});
+            document.getElementById("results").innerHTML=points;
+        }
+     </script>
+    </body>
+</html>
