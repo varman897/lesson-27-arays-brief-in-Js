@@ -1,0 +1,20 @@
+ <html>
+    <head>
+     <title>HELLO</title>
+    </head>
+    <body>
+    <p>This is hello html</p>
+    <p id="product_value"></p>
+    <script>
+        var numbers=[15,25,67,19];
+
+        function myfunction(num){
+            return num * 5;
+        }
+
+        var newarray=numbers.map(myfunction);
+        document.getElementById("product_value").innerHTML=
+        newarray;
+    </script>
+    </body>
+</html>
